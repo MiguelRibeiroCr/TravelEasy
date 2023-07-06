@@ -2,7 +2,7 @@ import { Camera, CameraType } from "expo-camera";
 import { useEffect, useState } from "react";
 import {  View, StyleSheet, TouchableHighlight,Text} from "react-native";
 import * as MediaLibrary from 'expo-media-library';
-import {Image} from 'expo-image';
+
 import { Feather } from '@expo/vector-icons'; 
 
 export default function CameraMap() {
@@ -39,12 +39,7 @@ export default function CameraMap() {
         type={CameraType.back}
         ratio={'1:1'}
       /> 
-      <Image
-      style={styles.container}
-      source={image}
-      contentFit="cover"
-      transition={1000}
-      />
+      
       <View style={styles.bottonCenter}>
          <TouchableHighlight 
       style={styles.botton}
@@ -60,12 +55,8 @@ export default function CameraMap() {
       </TouchableHighlight>
     </View>
       </View>
-      
-     
 
   );
-
-
 }
 
 const styles = StyleSheet.create({
@@ -74,21 +65,19 @@ const styles = StyleSheet.create({
     
   },
   styleCamera: {
-    aspecRatio: 1,
     flex: 1,
   },
   botton:{
     justifyContent:'center',
-    backgroundColor:'#191970',
+    backgroundColor:'#009688',
     elevation:5,
     alignItems:'center',
-    height:150,
-    width:150,
+    height:100,
+    width:100,
     borderRadius:100,
     position:'absolute',
-    bottom:100,
-    
-    
+    bottom:60,
+  
   },
   bottonCenter:{
   alignItems:'center',
