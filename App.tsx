@@ -1,5 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import HomeMap from './src/home/homemap';
 import CameraMap from './src/camera/cameramap';
 import { NavigationContainer } from '@react-navigation/native';
